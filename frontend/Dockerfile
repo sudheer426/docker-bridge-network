@@ -3,6 +3,8 @@ FROM python:3
 
 RUN pip install requests
 
+WORKDIR /app
+
 # Copy frontend.py into the container at /app
 COPY frontend.py /app/frontend.py
 
